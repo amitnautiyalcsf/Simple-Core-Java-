@@ -2,7 +2,7 @@ package ComparableAndComparatorDiff;
 
 //public class Laptop implements Comparable<Laptop> {
 
-	//if we use comparator then we need to implement comparable or override it's compare to method
+	//if we use comparator then we need to implement comparable or override it's comparTo method
 public class Laptop
 {
 	
