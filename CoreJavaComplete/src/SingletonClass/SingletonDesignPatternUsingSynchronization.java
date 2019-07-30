@@ -22,9 +22,9 @@ public class SingletonDesignPatternUsingSynchronization {
 		
 		
 		
-		Thread t1 = new Thread(()->{Abcde obj= Abcde.getInstrance();});
+		Thread t1 = new Thread(()->{Abcde obj= Abcde.getInstance();});
 	
-		Thread t2 = new Thread(()->{Abcde obj2 = Abcde.getInstrance();});
+		Thread t2 = new Thread(()->{Abcde obj2 = Abcde.getInstance();});
 		
 		t1.start();
 		t2.start();
@@ -61,7 +61,7 @@ class Abcde
 	
 	
 	
-	public static synchronized Abcde getInstrance()
+	public static synchronized Abcde getInstance()
 	{
 		if(obj==null) // checking wheather it is the first time we are creating the object. 
 		{
